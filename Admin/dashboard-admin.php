@@ -4,8 +4,6 @@ include "../template-spp/navbar.php";
 include "../template-spp/sidebar.php";
 ?>
 
-
-
 <!-- Main Content -->
 <div class="main-content">
   <section class="section">

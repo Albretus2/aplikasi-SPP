@@ -32,6 +32,14 @@
 </head>
 
 <body>
+    <?php
+      if (isset($_GET['pesan'])){
+        if ($_GET['pesan'] == "gagal"){
+
+        }
+      }
+    ?>
+
   <div id="app">
     <section class="section">
       <div class="container mt-5">
@@ -50,7 +58,7 @@
                 <form method="POST" action="#" class="needs-validation" novalidate="">
                   <div class="form-group">
                     <label for="email">Email</label>
-                    <input id="email" type="email" class="form-control" name="email" tabindex="1" required autofocus>
+                    <input id="email" type="email" class="form-control" name="username" tabindex="1" required autofocus>
                     <div class="invalid-feedback">
                       Please fill in your email
                     </div>
@@ -75,7 +83,7 @@
 
                   <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
-                      Login
+                     <a href="Admin/dashboard-admin.php">Login</a>  
                     </button>
                   </div>
                 </form>
@@ -83,7 +91,7 @@
                   <div class="text-job text-muted">Login SEBAGAI PETUGAS/ADMIn</div>
                 </div>
                 <div class="form-group">
-                  <button type="submit" class="btn btn-danger btn-lg btn-block" tabindex="4">
+                  <button type="submit" class="btn btn-danger btn-lg btn-block" tabindex="4" value="LOGIN">
                     Petugas/Admin
                   </button>
                 </div>
