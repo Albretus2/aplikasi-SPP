@@ -83,7 +83,7 @@
 
                   <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
-                     <a href="Admin/dashboard-admin.php">Login</a>  
+                     <a href="Admin/dashboard-admin.php" style="color :white;text-decoration:none;">Login</a>  
                     </button>
                   </div>
                 </form>
