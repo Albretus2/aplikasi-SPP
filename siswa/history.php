@@ -1,6 +1,6 @@
 <?php
-include "../template-spp/navbar.php";
-include "../template-spp/sidebar.php";
+include "../template-spp/navbar_siswa.php";
+include "../template-spp/sidebar_siswa.php";
 include "../template-spp/header.php";
 ?>
   <div id="app">

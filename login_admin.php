@@ -32,6 +32,13 @@
 </head>
 
 <body>
+<?php
+    if (isset($_GET['pesan'])) {
+        if ($_GET['pesan'] == "gagal") {
+        }
+    }
+    ?>
+
   <div id="app">
     <section class="section">
       <div class="container mt-5">
@@ -43,50 +50,57 @@
 
             <div class="card card-primary">
               <div class="card-header">
-                <h4>Login Siswa</h4>
+                <h4>Login Admin</h4>
               </div>
 
               <div class="card-body">
-                <form method="POST" action="cek_login_siswa.php" class="needs-validation" novalidate="">
+                <form method="POST" action="cek_login_admin.php" class="needs-validation" novalidate="">
                   <div class="form-group">
-                    <label for="nisn">NISN</label>
-                    <input id="nisn" type="username" class="form-control" name="nisn" tabindex="1" required autofocus>
+                    <label>Username</label>
+                    <input id="username" type="username" class="form-control" name="username" tabindex="1" required autofocus>
                     <div class="invalid-feedback">
-                      Please fill in your nisn
+                      Please fill in your username
                     </div>
                   </div>
 
                   <div class="form-group">
-                    <label for="nis">Nis</label>
-                    <input id="nis" type="username" class="form-control" name="nis" tabindex="1" required autofocus>
+                    <div class="d-block">
+                      <label for="password" class="control-label">Password</label>
+                      <div class="float-right">
+                        <a href="auth-forgot-password.html" class="text-small">
+                          Forgot Password?
+                        </a>
+                      </div>
+                    </div>
+                    <input id="password" type="password" class="form-control" name="password" tabindex="2" required>
                     <div class="invalid-feedback">
-                      Please fill in your nis
+                      please fill in your password
                     </div>
                   </div>
 
 
 
                   <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
-                     Login  
+                    <button type="submit" class="btn btn-primary btn-lg btn-block tombol_login" tabindex="4" value="LOGIN">
+                     Login
                     </button>
                   </div>
                 </form>
                 <div class="text-center mt-4 mb-3 ">
-                  <div class="text-job text-muted">Login SEBAGAI PETUGAS/ADMIn</div>
+                  <div class="text-job text-muted">Login SEBAGAI SISWA</div>
                 </div>
                 <div class="form-group" >
                   <!-- <button type="submit" class="btn btn-danger btn-lg btn-block" tabindex="4" value="LOGIN">
                     Petugas/Admin
                   </button> -->
-                  <a href="login_admin.php" class="btn btn-danger btn-lg btn-block">Login sebagai Admin/Petugas</a>
+                  <a href="index.php" class="btn btn-success btn-lg btn-block">Login sebagai siswa</a>
                 </div>
               </div>
 
             </div>
     </section>
     <div class="simple-footer">
-      Copyright &copy; ALBRETUS & PUTRA MAHENDRA
+      Copyright &copy;  ALBRETUS & PUTRA MAHENDRA
     </div>
   </div>
 

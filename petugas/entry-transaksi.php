@@ -1,6 +1,6 @@
 <?php
-include "../template-spp/navbar.php";
-include "../template-spp/sidebar.php";
+include "../template-spp/navbar_petugas.php";
+include "../template-spp/sidebar_petugas.php";
 include "../template-spp/header.php";
 ?>
 <div id="app">

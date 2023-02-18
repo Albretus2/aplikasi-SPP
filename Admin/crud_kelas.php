@@ -1,9 +1,9 @@
 <?php
-include "../template-spp/navbar_petugas.php";
-include "../template-spp/sidebar_petugas.php";
+include "../template-spp/navbar_admin.php";
+include "../template-spp/sidebar_admin.php";
 include "../template-spp/header.php";
 ?>
-<div id="app">
+  <div id="app">
   <div class="main-wrapper main-wrapper-1">
     <div class="navbar-bg"></div>
     <!-- Main Content -->
@@ -13,7 +13,7 @@ include "../template-spp/header.php";
           <div class="col-lg-12">
             <div class="card">
               <div class="card-body">
-                <h4 class="card-title">Dashboard Petugas</h4>
+                <h4 class="card-title">Dashboard kelas</h4>
               </div>
             </div>
           </div>
